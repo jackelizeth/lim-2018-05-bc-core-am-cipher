@@ -1,50 +1,24 @@
+window.cipher = { 
 
-window.cipher = {  
+  encode:  (string, offset) => { // metodo para cifrar
+ //alert(string);
+    let resultado ="";
+    
+    for (let i = 0; i < string.length; i++){//lenght es la cantidad de string
+      let posicion_Ascii = string.charCodeAt(i);
+      //charCodeAt (0)empieza con cero y cero es 65 = a la letra A
+      //charCodeAt (1)empieza con cero y cero es 65 = a la letra 
 
-  Encode:  (string, offset) => { // metodo para cifrar
-
-//alert(string);
-
-    let text_result ="";
-
-    let tamanio = string.length
-
-
-    for (let i=0; i<tamanio; i++){
-      let pos_Ascii=string.charCodeAt(i);
-
-      //alert(pos_Ascii)
-
-      let res_formula=(pos_Ascii-65+offset)%26+65;
-
-      text_result += String.fromCharCode(res_formula);
-
+      //alert(posicion_Ascii)
+ 
+      let res_formula = (posicion_Ascii-65+offset)%26+65;
+ 
+      resultado += String.fromCharCode(res_formula);
+ 
       }
-      return text_result;
-
-
-
-
+      return resultado;
+ 
     },
-    Decode:  (string, offset) => { //  metodo para decifrar
-
-      //alert(string);
-
-      /*
-      let cipheredMessage='';
-      for (let i=0; i<string.length; i++){
-        let posicionAscii=string.charCodeAt(i);
-        let x=(posicionAscii+65-offset)%26+65;
-        cipheredMessage = cipheredMessage+String.fromCharCode(x);
-        }
-        return cipheredMessage;
-
-*/
-
-
-      }
-};
-
-
-  
-
+ 
+  }
+ 
