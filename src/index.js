@@ -2,10 +2,9 @@ document.getElementById("Cifrando").addEventListener("click",function(event){
 
   event.preventDefault();//para que el formulario no se envie a la direccion del action
 
-  let result = window.cipher.Encode(document.getElementById("texto_origen").value,document.getElementById("posicion").value);
+    let cogiendo_inf = window.cipher.encode(document.getElementById("ingresando_text").value,document.getElementById("posicion").value);
 
-  document.getElementById("texto_resultado").value =result;
-
+    document.getElementById("mostrando_text").value = cogiendo_inf;
 
 },false);
 
@@ -13,9 +12,9 @@ document.getElementById("Cifrando").addEventListener("click",function(event){
 document.getElementById("Decifrando").addEventListener("click",function(event){
  event.preventDefault();//para que el formulario no se envie a la direccion del action
 
- let result =  window.cipher.Decode(document.getElementById("texto_origen").value,document.getElementById("posicion").value);
+ let cogiendo_inf =  window.cipher.decode(document.getElementById("ingresando_text").value,document.getElementById("posicion").value);
 
- document.getElementById("texto_resultado").value =result;
+ document.getElementById("mostrando_text").value =cogiendo_inf;
 
 },false);
 

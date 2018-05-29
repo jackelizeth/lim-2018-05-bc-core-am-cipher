@@ -7,26 +7,25 @@
 </head>
 <body>
 
-   <div id="root">
+  <h1>EL CIFRADO CESAR</h1>
 
-<form name="formulario" action="#">
+  <div id="root">
 
- <section >
- <label>Añadir mensaje</label>
- 
-   <button id="Cifrando">CIFRANDO</button>
-   <button id="Decifrando"> DECIFRANDO </button>
-   <input id="posicion" type="text" />
-   <textarea id="texto_origen" name="resultado1" cols="30" rows="10"></textarea>
+  <form name="formulario">
 
-   <textarea id="texto_resultado" name="mensaje1" cols="30" rows="10" disabled></textarea>
+    <section >
+     <label>Añadir mensaje</label>
+     <br>
+      <textarea id="ingresando_text" cols="30" rows="10"></textarea>
+      <button id="Cifrando">CIFRANDO</button>
+      <button id="Decifrando"> DECIFRANDO </button>
+      <input id="posicion" type="text" />
+      <textarea id="mostrando_text" cols="30" rows="10" disabled></textarea>
+    </section>
 
- </section>
+  </form>
 
-
-</form>
-
-</div>
+  </div>
 
   <script src="cipher.js"></script>
   <script src="index.js"></script>
