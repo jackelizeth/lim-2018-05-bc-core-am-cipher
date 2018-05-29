@@ -1,14 +1,28 @@
-function cifrar (){
-  //document.write(" hola mundo");
-  const alfb =[ ]
-//captura el valor del texto del elemento por el Id = texto
-let text1 = document.getElementById('texto').value;
+//escuchar eventos de los botones cifrar y decifrar
 
-//asigna el valor capturado hacia la etiqueta de Id = texto_cifrado
-document.getElementById('texto_cifrado').innerHTML= text1;
-}
+//document.getElementById("Cifrando").addEventListener("click",window.cipher.Encode,false);
+document.getElementById("Cifrando").addEventListener("click",function(event){
 
-function decifrar (){
-  
-}
+   event.preventDefault();//para que el formulario no se envie a la direccion del action
+
+   let result = window.cipher.Encode(document.getElementById("texto_origen").value,document.getElementById("posicion").value);
+
+   document.getElementById("texto_resultado").value =result;
+
+
+},false);
+
+
+
+
+document.getElementById("Decifrando").addEventListener("click",function(event){
+  event.preventDefault();//para que el formulario no se envie a la direccion del action
+
+  let result =  window.cipher.Decode(document.getElementById("texto_origen").value,document.getElementById("posicion").value);
+
+  document.getElementById("texto_resultado").value =result;
+
+},false);
+
+
 
