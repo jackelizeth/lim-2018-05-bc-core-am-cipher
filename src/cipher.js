@@ -1,6 +1,6 @@
 window.cipher = { 
-
-  encode:  (string, offset) => { // metodo para cifrar
+  
+  encode : (string , offset) => { // metodo para cifrar
  //alert(string);
     let resultado =" ";
     let valorOffset = parseInt(offset) 
@@ -15,12 +15,12 @@ window.cipher = {
      // alert(resultado)
     }
     return resultado;
-  }
-
-  decode:  (string, offset) => { // metodo para cifrar
+  },
+  decode : (string , offset) => { // metodo para cifrar
     //alert(string);
        let resultado =" ";
        let valorOffset = parseInt(offset) 
+   
        for (let i = 0; i < string.length; i++){//lenght cuenta los caracteres del string
          let posicion_Ascii = string.toUpperCase().charCodeAt(i); // el charCodeAt para obtener el codigo ascii de 1 letra
         //alert(posicion_Ascii);
@@ -31,7 +31,7 @@ window.cipher = {
         // alert(resultado)
        }
        return resultado;
-     }   
+     },
 
 };
  
