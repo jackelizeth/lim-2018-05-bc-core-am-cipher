@@ -2,8 +2,29 @@ body{
 background-color: lightcoral;
 }
 
-h1{
-    margin: 2cm 12cm;
-    
+.encabezado{
+    background-color: rgba(192, 155, 176, 0.644);
+    padding: 3px 10px;
+    border: rgba(226, 43, 180, 0.801) 5px solid;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 
 }
+    
+h1{
+    color: rgb(0, 4, 255) ;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 900;
+
+}
+
+.fondos{
+    background-color: rgba(219, 16, 131, 0.644);
+    padding: 5cm 10cm;
+    margin: 1cm 1cm 1cm 1cm;
+
+}
+
+
+

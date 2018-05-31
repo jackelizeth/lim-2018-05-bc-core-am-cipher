@@ -1,4 +1,6 @@
 document.getElementById("Cifrando").addEventListener("click",function(event){
+
+  
   event.preventDefault();//para que la etiqueta form no se nose direccione a la url
    let resul_encriptado = cipher.encode(document.getElementById("ingresando_text").value,document.getElementById("posicion").value);
 
