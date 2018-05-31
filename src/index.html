@@ -2,33 +2,36 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Caesar Cipher</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Caesar Cipher</title>   
+  <link rel="stylesheet" href="style.css" />    
 </head>
 <body>
 
-<div>   
-<header class ="encabezado">
-    <h1>EL CIFRADO CESAR</h1>
-</header>
-</div>
- 
-  <div id="root"> 
+  <div>   
+    <header class ="encabezado">
+      <h1>EL CIFRADO CESAR</h1>
+    </header>
+  </div>
+  
+  <div id="root">
+
+    <div class = "caja1">
+    </div>
+    <div class = "caja2">
+      </div>
 
   <form name="formulario">
-
     <section class="fondos">
-      <label>Añadir mensaje</label>
+    <label>Añadir mensaje</label>
       <br>
       <textarea id="ingresando_text" cols="30" rows="10"></textarea>
+      <input id="posicion" type="text" />
       <button id="Cifrando">CIFRANDO</button>
       <button id="Decifrando"> DECIFRANDO </button>
-      <input id="posicion" type="text" />
       <span id="mostrando_text"  class ="cuadro" ></span>
     </section>
-    
   </form>
-
+  
   </div>
 
   <script src="cipher.js"></script>

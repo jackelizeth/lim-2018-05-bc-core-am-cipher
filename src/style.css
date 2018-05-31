@@ -19,10 +19,18 @@ h1{
 
 }
 
+.caja1{
+    background-color: rgba(219, 16, 131, 0.644);
+    float: left;
+}
+
+.caja2{
+    background-color: rgba(219, 16, 131, 0.644);
+    float: left;
+}
 .fondos{
     background-color: rgba(219, 16, 131, 0.644);
-    padding: 5cm 10cm;
-    margin: 1cm 1cm 1cm 1cm;
+    float: left;
 
 }
 
