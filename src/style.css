@@ -4,37 +4,69 @@ background-color: lightcoral;
 
 .encabezado{
     background-color: rgba(192, 155, 176, 0.644);
-    padding: 3px 10px;
+    padding: 1px 10px;
     border: rgba(226, 43, 180, 0.801) 5px solid;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
-
 }
     
 h1{
-    color: rgb(0, 4, 255) ;
+    color: red;
     font-size: 60px;
     text-align: center;
-    font-weight: 900;
-
+    font-kerning: Times;
 }
 
 .caja1{
-    background-color: rgba(219, 16, 131, 0.644);
-    float: left;
+    background-color: rgba(245, 228, 0, 0.644);
+    float: center;
+    padding: 2px;
 }
 
-.caja2{
-    background-color: rgba(219, 16, 131, 0.644);
-    float: left;
-}
 .fondos{
     background-color: rgba(219, 16, 131, 0.644);
-    float: left;
-
+    float: center;
+    padding: 5% 400px;
 }
 
-.cuadro{
-    background-color: rgba(255, 255, 255, 0.644);
+.añadir_mensaje{
+    color: blue;
+    padding: 1px 10px;
+    float: center;
+    font-size: 40px;
+}
+
+#ingresando_text{
+    padding: 1cm 1cm;
+    font-size: 1cm;
+    font-family: times;
+    float: center;
+}
+
+#posicion{
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: rgba(213, 163, 241, 0.692);
+}
+
+#Cifrando{
+    display: block;
+    font-family: sans-serif;
+    padding: 6px 15px;
+    font-size: 14px
+}
+
+#Decifrando{
+    display: block;
+    font-family: sans-serif;
+    padding: 6px;
+    font-size: 14px
+}
+
+#mostrando_text{
+    padding: 2px 100px ;
+    font-size: 1cm;
+    font-family: times;
+    background-color: rgba(213, 163, 241, 0.692);
 }
 
