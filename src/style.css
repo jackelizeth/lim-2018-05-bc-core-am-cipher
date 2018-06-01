@@ -1,29 +1,24 @@
-body{
-background-color: lightcoral;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.encabezado{
-    background-color: rgba(192, 155, 176, 0.644);
-    padding: 1px 10px;
-    border: rgba(226, 43, 180, 0.801) 5px solid;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+.background_big{
+    width: 1200px;
+    height: 1000;
+    background: lightpink;
+    margin: 0.5em auto;
+    padding: 7em 0.5em;
 }
     
-h1{
+header{
     color: red;
-    font-size: 60px;
+    font-size: 30px;
     text-align: center;
     font-kerning: Times;
 }
 
-.caja1{
-    background-color: rgba(245, 228, 0, 0.644);
-    float: center;
-    padding: 2px;
-}
-
-.fondos{
+.background{
     background-color: rgba(219, 16, 131, 0.644);
     float: center;
     padding: 5% 400px;
