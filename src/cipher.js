@@ -3,7 +3,7 @@ window.cipher = {
     // string texto que se quiere cifrar
     // offset el numero de posicion que se movera a la derecha
   encode : (string, offset) => { 
-    let result = " ";
+    let result = "";
     /* parseInt(string, base) : Convierte (parsea): de un string a numero
        ejm el  parseInt("F", 16)  devuelve de resultado 15 */
     let valueOffset = parseInt(offset) 
@@ -19,7 +19,7 @@ window.cipher = {
       const code_ascii = string.toUpperCase().charCodeAt(i); 
       // 32 representa el espacio entre las letras
       if (code_ascii === 32) {
-        result += " ";
+        result += "";
       } else {
           const result_formula = (code_ascii - 65 + (valueOffset)) % 26 + 65;
     // ejm: "A" su code es 65 entonces  (65 - 65 + (valueOffset = 2)) % 26 + 65 = 67 entonces... 
@@ -50,13 +50,9 @@ window.cipher = {
  },
 
   createCipherWithOffset: (offset) => { 
-    return { 
-      encode: (string) => { 
-        return cipher.encode(string, offset)
-      },
-      decode: (string) => { 
-        return cipher.encode(string, offset)
-      }  
-    }
-  }
+    return {
+      encode: (string) =>  cipher.encode(string, offset),
+      decode: (string) =>  cipher.encode(string, offset)
+    };
+  },
 };
