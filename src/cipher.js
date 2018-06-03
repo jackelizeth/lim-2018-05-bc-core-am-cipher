@@ -19,13 +19,13 @@ window.cipher = {
       const code_ascii = string.toUpperCase().charCodeAt(i); 
       // 32 representa el espacio entre las letras
       if (code_ascii === 32) {
-        result += "";
+        result += " ";
       } else {
-          const result_formula = (code_ascii - 65 + (valueOffset)) % 26 + 65;
+        const result_formula = (code_ascii - 65 + (valueOffset)) % 26 + 65;
     // ejm: "A" su code es 65 entonces  (65 - 65 + (valueOffset = 2)) % 26 + 65 = 67 entonces... 
     /* String.fromCharCode(num1, ..., numN) : Este método devuelve una "string" y no un objeto String "number".
        del ejm anterior "A" su code es 65 aplicamos String.fromCharCode(67) nos devolvera la letra "c" */
-          result += String.fromCharCode(result_formula);
+        result += String.fromCharCode(result_formula);
         // (x = x + y)  del ejemplo anterior el result seria "c"
       }
    }
@@ -35,15 +35,15 @@ window.cipher = {
     // string texto que se quiere decifrar
     // offset el numero de posicion que se movera a la izquierda
   decode : (string, offset) => {
-    let result = " ";
+    let result = "";
     let valueOffset = parseInt(offset) 
     for (let i = 0; i < string.length; i++) {
       const code_ascii = string.toUpperCase().charCodeAt(i);
       if (code_ascii === 32) {
         result += " ";
       } else {
-          const result_formula = (code_ascii + 65 - (valueOffset)) % 26 +65;
-          result += String.fromCharCode(result_formula);
+        const result_formula = (code_ascii + 65 - (valueOffset)) % 26 + 65;
+        result += String.fromCharCode(result_formula);
       }
    }
    return result;
@@ -52,7 +52,7 @@ window.cipher = {
   createCipherWithOffset: (offset) => { 
     return {
       encode: (string) =>  cipher.encode(string, offset),
-      decode: (string) =>  cipher.encode(string, offset)
+      decode: (string) =>  cipher.decode(string, offset)
     };
   },
 };
