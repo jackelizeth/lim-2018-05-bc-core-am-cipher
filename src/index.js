@@ -6,7 +6,6 @@ let in_position = document.getElementById("posicion");
 let output = document.getElementById("mostrando_text"); // output = salida 
 // captuta la etiqueta span del id "mostrando_text" donde se muestra el resultado
 
-
 let btn_encode = document.getElementById("Cifrando");
 let btn_decode = document.getElementById("Decifrando");
 
@@ -20,17 +19,30 @@ btn_encode.addEventListener("click", function(event) {
   // el objeto cipher , su metodo encode y sus (parametros)
   let result_encode = cipher.encode(in_text.value,in_position.value);
   output.innerHTML = result_encode;
-
 });
 
 btn_decode.addEventListener("click",function(event) {
-  event.preventDefault();
+  event.preventDefault();  
 
 // el objeto cipher , su metodo decode y sus (parametros)
   let result_decode = cipher.decode(in_text.value,in_position.value);
   output.innerHTML = result_decode;
-
 });
 
+//funcion para mostrar el formulario encode - decode
+let btn_create_msg = document.getElementById ("create_msg");
+let btn_read_msg = document.getElementById ("read_msg");
+let div_encode_decode = document.getElementById ("encode_decode");
+let div_background_welcome = document.getElementById ("background_welcome")
 
+btn_create_msg.addEventListener("click",function(){ 
+  div_encode_decode.style.display="block";
+  div_background_welcome.style.display="none";
+  btn_decode.style.display="none";
 
+})
+btn_read_msg.addEventListener("click",function(){ 
+  div_encode_decode.style.display="block";
+  div_background_welcome.style.display="none";
+  btn_encode.style.display="none";
+})

@@ -1,67 +1,135 @@
+/*el margen y el padding a 0*/
 *{
     margin: 0;
     padding: 0;
 }
 
-.background_big{
-    width: 1200px;
-    height: 1000;
-    background: lightpink;
-    margin: 0.5em auto;
-    padding: 7em 0.5em;
+/*lick para retornar al inicio*/
+.return_index{
+float: left;
+color: white;
 }
-    
-header{
-    color: red;
-    font-size: 30px;
+
+/*ocultando el formulario endo y decode al entrar a la pagina web*/
+/*tambien es fondo encode y decode*/
+#encode_decode{
+    display: none;
+    position: absolute; /*absolute: nadie va ha ocupar su lugar*/  
+    left: 50%;
+    transform: translateX(-50%) ;
+    text-align:center;
+    width: 95%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    margin: 5px auto;
+    background-image: url("https://c.tribune.com.pk/2018/03/1664877-indiaapps-1521540821.jpg");
+    background-size:100% 100%;
+}
+
+/*fondo de bienvenida*/
+section{
+    position: absolute; 
+    left: 50%;
+    transform: translateX(-50%);
+    width:500px;     
+}
+
+/*fondo de bienvenida*/
+#background_welcome{       
+    height: 100%;
+    background: black;
+    position: absolute;  
+    background-image: url("http://www.hdfondos.eu/pictures/2014/0313/1/matrix-code-wallpaper-4358.jpg");
+    background-size:100% 100%;
+}
+
+/*texto de bienvenida*/
+.text_welcome{
+    padding: 100px 100px;
     text-align: center;
+    font-size: 120px;
+    color: blue
+}
+
+/*texto de informativo*/
+.text_information{
+    padding: 0px 150px;
+    text-align: center;
+    font-size: 30px;
+    color:red;
+}
+
+/*boton crear mensage*/
+#create_msg{
+    float: left;
+    margin: 70px 250px;
+    padding: 20px;
+}
+
+/*boton leer mensage*/
+#read_msg{
+    float: right;
+    margin: 70px 250px;
+    padding: 20px;
+}
+
+/*encabezado azul*/
+header{
+    top: 0px;
+    width:100%;
+    height:120px;
+    background: rgb(0, 0, 0);   
+}
+
+/*texto cifrado*/
+h1{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
     font-kerning: Times;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align:center;
 }
 
-.background{
-    background-color: rgba(219, 16, 131, 0.644);
-    float: center;
-    padding: 5% 400px;
-}
-
-.añadir_mensaje{
-    color: blue;
-    padding: 1px 10px;
-    float: center;
+/*texto que indica escribir mensaje*/
+.text_read_msg{
     font-size: 40px;
+    color: rgb(255, 255, 255);
+    margin: 20px 50px;
 }
 
+/*ingresando texto en texteare*/
 #ingresando_text{
-    padding: 1cm 1cm;
+    padding: 10% 10%;
     font-size: 1cm;
     font-family: times;
-    float: center;
 }
 
+/*añadinendo un numero que indica la posicion*/
 #posicion{
-    padding: 8px;
-    margin-bottom: 8px;
-    background-color: rgba(213, 163, 241, 0.692);
+    margin: 2% 1%;
+    display:block;    
+    background-color: rgb(0, 0, 0);
+    color: red;
 }
 
-#Cifrando{
-    display: block;
+/*botones cifrando decifrando*/
+#Cifrando, #Decifrando{
+    display:block;    
     font-family: sans-serif;
     padding: 6px 15px;
-    font-size: 14px
+    font-size: 14px;
 }
 
-#Decifrando{
-    display: block;
-    font-family: sans-serif;
-    padding: 6px;
-    font-size: 14px
-}
-
+/*mostrando texto*/
 #mostrando_text{
-    padding: 2px 100px ;
-    font-size: 1cm;
-    font-family: times;
-    background-color: rgba(213, 163, 241, 0.692);
+    display:block;    
+    position: relative; 
+    padding: 10%;
+    word-wrap: break-word;
+    width: 80%;
+    height: 30%;
+    background-color: rgb(255, 255, 255);
 }
-

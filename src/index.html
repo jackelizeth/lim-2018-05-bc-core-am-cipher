@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,26 +8,40 @@
   <link rel="stylesheet" href="style.css"/>    
 </head>
 <body>
-  <div class ="background_big">
+
+<div id="background_welcome">
+    <p class="text_welcome">BIENVENIDO</p>
+    <p class ="text_information">Ahora puedes escribir <strong>culaquier tipo de mensajes </strong>sin ser 
+      descubierta aprovecha la oportunidad y uslo para  hacer fiestas sorpresar, organizar eventos tu eliges</p>
+    <button id="create_msg">Crear mensaje</button> 
+    <button id="read_msg" >Leer mensaje</button> 
+</div>  
+
+<div id="encode_decode"> 
+
+        <a class ="return_index" href="index.html">Retornar a INICIO</a>
+
     <header>
       <h1>EL CIFRADO CESAR</h1>
     </header>
  
-  <section class="background">
-    <form name="formulario">
-    <label class = "añadir_mensaje" >Añadir mensaje</label>
-      <br>
-      <textarea id="ingresando_text" ></textarea>
-      <input id="posicion" type="text"/>
-      <button id="Cifrando">CIFRANDO</button>
-      <button id="Decifrando"> DECIFRANDO </button>
-      <br>
-      <span id="mostrando_text" ><br></span>
-    </form>
-  </section>
+    <section>
+      <form name="formulario">
+      <label class="text_read_msg">Escribir mensaje</label>
+        <br>
+        <textarea id="ingresando_text" ></textarea>
+        <input id="posicion" type="text"/>
+        <button id="Cifrando">CIFRANDO</button>
+        <button id="Decifrando">DECIFRANDO</button>
+        <br>
+        <span id="mostrando_text" ></span>
+      </form>
+    </section>
+  
+</div>
 
   <script src="cipher.js"></script>
   <script src="index.js"></script>
-  </div>
+
 </body>
 </html>
