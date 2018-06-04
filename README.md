@@ -4,7 +4,11 @@
 
 Desarrollar una aplicación web que cifre y descifre mensajes de texto.
 
-## Definicion del producto
+## Diseño de la Experiencia del Usuario (UX):
+
+* Para el proceso de diseño se realizo entrevistas, testeos con usuarios  y prototipado.
+
+## Definicion del producto:
 
 * Por medio de este producto se puede cifra y decifra mensajes texto de manera segura.
 * Con este producto podras enviar tu mensajes encriptados a quien tu desees a travez de cualquier medio de comunicacion, por ejemplo:     whatsApp, facebook, correos, etc
@@ -13,11 +17,10 @@ Desarrollar una aplicación web que cifre y descifre mensajes de texto.
 
 1.Los Principales Usuarios: Todas las personas que deseen proteger sus mensajes de texto.
 2.Objetivo de los Usuarios: Que su mensaje no sea vulnerable por otras personas.
-3.Alcance del Producto:
 
-## Metodología de trabajo:
+## Herramientas de Planificación:
 
-* Planificación del proyecto: Trello, Scrum, Slack.
+* Trello, Scrum en papelógrafo y Slack.
 
 ## Requerimientos Técnicos:
 
@@ -35,41 +38,12 @@ Desarrollar una aplicación web que cifre y descifre mensajes de texto.
     esta probando), usando el comando `npm test`.
 10. Crear la rama GitHub pages para la entrega del proyecto.
 
-     
-     
-     
- [reglas recomendadas (`"eslint:recommended"`)](https://eslint.org/docs/rules/).
-En cuanto a reglas/guías de estilo en sí,
-usaremos las recomendaciones _por defecto_ de tanto `eslint` como `htmlhint`.
+## Autores:
 
+## Recursos:
 
-Para el diseño de la experiencia de usuario
-proceso de diseño como entrevistas y testeos con usuarios o sketching y prototipado.
-
-la utilización de herramientas de planificación, como
-un calendario, trello, papelógrafo u otras, creando un plan paso a paso de cómo
-quiere abarcar el reto o problema.
-
-
-## Tips / Pistas
-
-A continuación un video de Michelle que te lleva a través de la fórmula
-matemática del Cifrado César y un par de cosas más que debes saber para
-resolver este proyecto. ¡Escúchala con detenimiento y sigue sus consejos! :)
-
-[![tips caesar cipher](https://img.youtube.com/vi/zd8eVrXhs7Y/0.jpg)](https://www.youtube.com/watch?v=zd8eVrXhs7Y)
-
-También te compartimos más información de lo que Michelle te ha explicado en el
-video anterior:
-
-* [Aprende más sobre `charCodeAt()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/charCodeAt)
-* [Aprende más sobre `String.fromCharCode()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/fromCharCode)
-* [Aprende más sobre `ASCII`](http://conceptodefinicion.de/ascii/)
-* [Documentación de NPM](https://docs.npmjs.com/)
-
-## Autores
-* Trabjo inicial 
-
-## Recursos (Q & A)
-
-El código de [sli.do](https://www.sli.do/) para el proyecto 1 : U414
+* El video de Michelle [![tips caesar cipher](https://img.youtube.com/vi/zd8eVrXhs7Y/0.jpg)](https://www.youtube.com/watch?v=zd8eVrXhs7Y)
+* El código de reglas/guías de estilo [(`"eslint:recommended"`)](https://eslint.org/docs/rules/).
+* Aprendiendo de [`charCodeAt()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/charCodeAt)
+* Aprendiendo de [ `String.fromCharCode()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/fromCharCode)
+* Aprendiendo de [Documentación de NPM](https://docs.npmjs.com/)
