@@ -24,10 +24,9 @@ Desarrollar una aplicación web que cifre y descifre mensajes de texto.
 
 ## Requerimientos Técnicos:
 
-1.  Instalar un editor de texto por ejemplo Visual Studio 
-    [Code](https://code.visualstudio.com/)u otros.
+1.  Instalar un editor de texto por ejemplo Visual Studio [Code](https://code.visualstudio.com/) u otros.
 2.  Crear una cuenta en GitHub.
-3.  Instala Git bash [Git bash](https://git-scm.com/download/win) es un programita que interpreta líneas de comando (herramienta
+3.  Instala Git bash [Git bash](https://git-scm.com/download/win) es un programa que interpreta líneas de comando (herramienta
     tipo consola para Windows) , 
 4.  Forkear el cifrado Cesar de tu GitHub.
 5.  Clona tu fork a tu computadora (copia local).
