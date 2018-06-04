@@ -38,7 +38,22 @@ Desarrollar una aplicación web que cifre y descifre mensajes de texto.
     esta probando), usando el comando `npm test`.
 10. Crear la rama GitHub pages para la entrega del proyecto.
 
-## Autores:
+## Siguiendo las instrucciones:
+
+1.En Git bash 
+
+DEFINIR EL NOMBRE DE NUESTRO PROYECTO:
+ 
+ * git config --global user.name "NOMBRE DEL AUTOR"
+ * git config --global user.name
+ * git config --global user.mail "CORREO ELECTRONICO"
+   
+DEFINICIÓN DEL PROYECTO A USAR GIT:
+* git init
+* git add .
+* git add commits.txt
+* git remote add origin http://GhithHub......
+* git push origin master
 
 ## Recursos:
 
