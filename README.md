@@ -24,7 +24,7 @@ Desarrollar una aplicación web que cifre y descifre mensajes de texto.
 
 ## Requerimientos Técnicos:
 
-1.  Instalar un editor de texto por ejemplo Visual Studio Code
+1.  Instalar un editor de texto por ejemplo Visual Studio 
     [Code](https://code.visualstudio.com/)u otros.
 2.  Crear una cuenta en GitHub.
 3.  Instala Git bash [Git bash](https://git-scm.com/download/win) es un programita que interpreta líneas de comando (herramienta
