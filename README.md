@@ -15,8 +15,8 @@ Desarrollar una aplicación web que cifre y descifre mensajes de texto.
 
 ## Usuario:
 
-1.Los Principales Usuarios: Todas las personas que deseen proteger sus mensajes de texto.
-2.Objetivo de los Usuarios: Que su mensaje no sea vulnerable por otras personas.
+1. Los Principales Usuarios: Todas las personas que deseen proteger sus mensajes de texto.
+2. Objetivo de los Usuarios: Que su mensaje no sea vulnerable por otras personas.
 
 ## Herramientas de Planificación:
 
